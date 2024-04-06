@@ -7,15 +7,15 @@ import SignUp from './SignUp';
 import LogIn from './LogIn';
 
 const NavBar = () => {
-  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+  const navigate = useNavigate(); 
   const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+  // const [searchTerm, setSearchTerm] = useState('');
   const [artistName, setArtistName] = useState('');
 
-  const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
+  // const handleInputChange = (event) => {
+  //   setSearchTerm(event.target.value);
+  // };
 
   const handleSearch = () => {
     

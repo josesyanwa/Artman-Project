@@ -13,7 +13,7 @@ import CommentSection from './Components/CommentSection';
 import Result from './Components/Result';
 
 const App = () => {
-  const [user,setUser] = useState(null);
+  const [setUser] = useState(null);
 
   useEffect(() => {
     
@@ -37,7 +37,7 @@ const App = () => {
       .catch(error => {
         console.error('Error checking session:', error);
       });
-  }, []);
+  }, [setUser]);
 
   return (
     <Router>
