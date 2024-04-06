@@ -16,7 +16,7 @@ from datetime import  timedelta
 from dotenv import load_dotenv
 load_dotenv()
 
-from .models import db, User, Art, Comment, Artist
+from models import db, User, Art, Comment, Artist
 
 # from .models import db
 # from .models.user import User
