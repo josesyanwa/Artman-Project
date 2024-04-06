@@ -9,7 +9,7 @@ const ArtWorks = () => {
   const { userData } = location.state || {};
 
   const [artworks, setArtworks] = useState([]);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
   const [showPostArtForm, setShowPostArtForm] = useState(false); // State to track whether to display the post art form
 
   // Function to fetch artworks from the backend
@@ -22,7 +22,7 @@ const ArtWorks = () => {
         return response.json();
       })
       .then(data => setArtworks(data.reverse())) // Reverse the order to show newest artworks first
-      .catch(error => setError(error.message));
+      // .catch(error => setError(error.message));
   };
 
   // Effect to fetch artworks on component mount and set up interval for automatic updates
