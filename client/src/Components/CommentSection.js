@@ -8,7 +8,7 @@ const CommentSection = ({ artwork }) => {
   // State to store comments for this artwork
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
   // FUNCTION TO FETCH COMMENTS
   useEffect(() => {
@@ -20,7 +20,7 @@ const CommentSection = ({ artwork }) => {
         return response.json();
       })
       .then(data => setComments(data))
-      .catch(error => setError(error.message));
+      // .catch(error => setError(error.message));
   }, [artworkId]);
 
   // Function to handle posting a new comment for artists
